@@ -1,0 +1,65 @@
+.about__slider{
+    position: relative;
+    overflow: hidden;
+    height: 315px;
+}
+.about__marque::after{
+    position: absolute;
+    content: "";
+    top: 25%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.06);
+}
+.about__slider__main{
+    width: 100%;
+    margin: 0 auto;
+}
+.about__slider__main__inner{
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    display: flex;
+}
+.about__slider__main__inner__main{
+    flex: 0 0 auto;
+    width: 100%;
+}
+.about__slider__main__inner__main__arrow{
+    padding-top: 40px;
+    display: block;
+    width: 200%;
+    position: absolute;
+    overflow: hidden;
+    left: -10px;
+    top: 170%;
+    -webkit-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+    -ms-transform: rotate(4deg);
+    -o-transform: rotate(4deg);
+    transform: rotate(4deg);
+    z-index: 1;
+    background: linear-gradient(270.03deg, #FFA84B 7.32%, #FF6068 40.11%, #B06CEA 85.92%);
+}
+.about__slider__slide{
+    width: 100%;
+    display: inline-block;
+}
+.about__slider__slide p{
+    margin-bottom: 0;
+    color: #fff;
+    margin-right: 15px;
+    display: inline-block;
+    float: left;
+    position: relative;
+    padding-right: 30px;
+    flex: 0 0 auto;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 40px;
+}
+.about__slider__main__inner__main__arrow .slick-track{
+    
+}

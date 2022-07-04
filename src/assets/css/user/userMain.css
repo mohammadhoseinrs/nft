@@ -1,0 +1,60 @@
+.usermain{
+    background: #fff;
+    position: fixed;
+    left: 0px;
+    height: calc(100%-20px);
+    width: 80px;
+    top: 0px;
+    z-index: 3;
+    bottom: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 0 20px rgb(89 102 122 / 5%);
+    box-shadow: 0 0 20px rgb(89 102 122 / 5%);
+    background: #1D1933;
+}
+.usermain__logo{
+    text-align: center;
+    margin: 20px 20px 20px;
+}
+.usermain__menu{
+    padding: 20px;
+    position: relative;
+    padding-top: 0;
+}
+.usermain__menu ul li{
+    border-radius: 16px;
+}
+.usermain__menu ul li:hover .nav-text{
+    display: block;
+}
+.usermain__menu ul li a:hover{
+    color: #3771FE;
+}
+.usermain__menu ul li a{
+    padding: 5px 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 3.5rem;
+    color: #7e7e7e;
+    text-decoration: none;
+}
+
+.nav-text{
+    display: none;
+    padding: 3px 8px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 20px rgb(89 102 122 / 5%);
+    box-shadow: 0 0 20px rgb(89 102 122 / 5%);
+    background-color: #fff;
+    width: fit-content;
+}
+.nav-icon{
+    font-size: 25px;
+    opacity: 0.75;
+    margin-right: 15px;
+    line-height: 0px;
+}

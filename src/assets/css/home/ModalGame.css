@@ -1,0 +1,526 @@
+
+.modalGame{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.365);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+.modalGame__content{
+    border-radius: 15px;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%,0);
+    z-index: 2;
+    width: 1100px;
+    height: 730px;
+    padding:35px;
+    background-color: #f2f2fa;
+    z-index: 10;
+    color: #000;
+    transition: all 2s ease;
+}
+.modal__text{
+    border-radius: 15px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,0);
+    z-index: 2;
+    width: 500px;
+    height: 430px;
+    padding:35px;
+    background-color: #f2f2fa;
+    z-index: 10;
+    color: #000;
+    transition: all 2s ease;
+}
+.modalText__startgame{
+    margin-top: 2rem;
+}
+.modalText__startgame p{
+    font-size: 20px;
+    margin-bottom: 12rem;
+}
+.modalGame__closeBtn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.modalGame__closeBtn svg{
+    font-size: 30px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.modalGame__inner__form__tittle{
+    padding: 5px;
+    border-radius: 24px;
+    background-color: hsla(0,0%,62.4%,.7490196078431373);
+    color: hsla(0,0%,100%,.718);
+    width: 120px;
+    text-align: center;
+    font-size: 13px;
+    margin-right: 10px;
+}
+.modalGame__inner__form__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.modalGame__inner__form__inner__left , .modalGame__inner__form__inner__right{
+    flex: 0.49;
+    position: relative;
+}
+.modalGame__inner__form__inner__left__inner__playerImage{
+    text-align: center;
+   
+}
+.modalGame__inner__form__inner__left__inner img{
+    height: 350px;
+    vertical-align: middle;
+    width: 350px;
+}
+.modalGame__inner__form__inner__left__inner__box{
+    padding: 0;
+    border: 3px solid #252e4e;
+    border-radius: 24px;
+    background-color: #2c324a;
+    display: flex;
+    align-items: center;
+}
+.modalGame__inner__form__inner__left__inner__box__flag{
+    margin-right: 20px;
+}
+.modalGame__inner__form__inner__left__inner__box__flag img{
+    width: 65px;
+    height: 65px;
+    margin: 5px;
+    padding: 2px;
+    border-radius: 50%;
+}
+.modalGame__inner__form__inner__left__inner__box__content{
+    text-align: left;
+}
+.modalGame__inner__form__inner__left__inner__box__content__title{
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.modalGame__inner__form__inner__left__inner__box__content__text{
+    display: flex;
+    align-items: center;
+}
+.modalGame__inner__form__marketvalue{
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.modalGame__inner__form__marketvalue__icon{
+    margin: 0 10px;
+}
+.modalGame__inner__form__marketvalue__icon span{
+    background-color: #0ff!important;
+    color: #000 !important;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 50%;
+}
+.modalGame__inner__form__marketvalue__icon__value{
+    font-size: 18px;
+    color: #0ff!important;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.app__versus__bar::before{
+    background-color: #d1d1d1;
+    content: "";
+    display: block;
+    height: 550px;
+    position: absolute;
+    width: 3px;
+    top: 0;
+}
+.app__versus__bar{
+    position: relative;
+}
+.app__versus__bar::after{
+    content:'VS';
+    position: absolute;
+    background-color: #0f205a;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    color: #fff;
+    line-height: 16px;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    font-size: 20px;
+    margin: 0 0 35px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,0);
+
+}
+.modalGame__inner__form__inner__right__inner__box{
+    background-color: rgb(238, 241, 255);
+    padding: 0;
+    border: 3px solid #252e4e;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+}
+.modalGame__inner__form__inner__left__inner__box__content__text{
+    color: #000;
+}
+.modalGame__inner__form__inner__left__inner__box__content__text{
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 200;
+}
+.modalGame__inner__form__inner__left__inner__box__content__text p{
+    margin: 0 5px;
+}
+.modalGame__inner__form__inner__left__inner__box__content__text b{
+    margin: 0 5px;
+    font-weight: 500;
+}
+.text_red{
+    color: #DC3444;
+}
+.text__green{
+    color: green;
+}
+.modalGame__inner__form__inner__right__inner__btn__green{
+    color: #fff;
+    background-color: #008818;
+    border: 2px solid #05771c;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: 0 6px 20px hsl(0deg 0% 100% / 24%);
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    width: 350px;
+}
+.modalGame__inner__form__inner__right__inner__btn__green svg{
+    margin-right: 5px;
+}
+.modalGame__inner__form__inner__right__inner__btn__red{
+    color: #fff;
+    background-color: #cb0000;
+    border: 2px solid #cb0000;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: 0 6px 20px hsl(0deg 0% 100% / 24%);
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    width: 350px;
+
+}
+.modalGame__inner__form__inner__right__inner__btn__red svg{
+    margin-right: 5px;
+}
+.modalGame__inner__form__inner__right__inner__btn{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.modalgame__point {
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modalgame__point span{
+    border-radius: 50%;
+    margin: 3px;
+    padding: 1px;
+    border: 1px solid #999;
+    height: 30px;
+    width: 30px;
+    display: inline-table;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modalgame__point .false{
+    background-color: #f55858;
+    color: #fff;
+    border: 1px solid red;
+}
+.modalgame__point .true{
+    background-color: #0fbd69;
+    color: #fff;
+    border: 1px solid #2fa32f;
+}
+.modalgame__textleft{
+    background-color: rgba(1,109,209,.5764705882352941);
+    margin: auto;
+    padding: 5px;
+    border-radius: 24px;
+    color: hsla(0,0%,100%,.718);
+    width: 120px;
+    text-align: center;
+    font-size: 13px;
+}
+.modalgame__textright{
+    background-color: rgba(0,181,63,.6039215686274509);
+    margin: auto;
+    padding: 5px;
+    border-radius: 24px;
+    color: hsla(0,0%,100%,.718);
+    width: 120px;
+    text-align: center;
+    font-size: 13px;
+}
+.modalgame__modalbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.modalgame__modalbox__item{
+    flex: 0.5;
+}
+.slideLeft {
+    transform: translate(-100%, 0);
+    display: none;
+  }
+  .modalGame__inner__form__inner__left__inner__item__box{
+    display: block;
+    position: relative;
+  }
+
+  .start__game__btn{
+    display: inline-block;
+    padding: 7px 24px;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    font-size: 13px;
+    border: 2px solid #3771fe;
+    border-radius: 100px;
+    background-color: #3771fe;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .start__game__btn:hover{
+    opacity: 0.8;
+  }
+  .modaltrueanswer {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .modaltrueanswer h3{
+    font-size: 25px;
+    color: #3771fe;
+  }
+  .modaltrueanswer__text{
+    margin-top: 2rem;
+  }
+  .modaltrueanswer__text b{
+    color: #3771fe;
+  }
+  .modaltrueanswer__text p{
+    margin: 5px 0;
+  }
+  .modaltrueanswer__cash{
+    margin-top: 12rem;
+    color: red;
+    cursor: pointer;
+  }
+  .modaltrueanswer__cash:hover{
+    text-decoration: underline;
+  }
+  .modaltrueanswer h4{
+    font-size: 25px;
+    color: red;
+  }
+  .modaltrueanswer__failed{
+    margin-bottom: 16rem;
+  }
+  .modaltrueanswer__failed p{
+    margin-bottom: 5px;
+  }
+@media screen and (max-width:1130px){
+    .modalGame__content{
+        width: 900px;
+    }
+}
+.loading{
+    background-color: #fff;
+    border-radius: 13px;
+    width: 100%;
+    box-shadow: 1px 1px 19px #00000047;
+    padding: 2rem;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width:930px){
+    .modalGame__content{
+        width: 830px;
+    }
+}
+@media screen and (max-width:840px){
+    .modalGame__content{
+        width: 650px;
+    }
+    .modalGame__inner__form__inner{
+        flex-direction: column;
+    }
+    .modalGame__inner__form__inner__left__inner__playerImage img{
+        height: 150px;
+        width: 200px;
+    }
+    .modalGame__inner__form__inner__left__inner__box ,
+    .modalGame__inner__form__inner__right__inner__box {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .modalGame__inner__form__inner__left{
+        margin-bottom: 2rem;
+    }
+    .modalGame__inner__form__inner__right{
+        margin-top: 2rem;
+    }
+    .app__versus__bar::before{
+        width: 100%;
+        margin: 0 auto;
+        height: 3px;
+    }
+    .app__versus__bar::after{
+       top: -20px;
+    }
+    .modalGame__inner__form__inner__left__inner__box__flag img{
+        height: 40px;
+        width: 40px;
+    }
+    .modalGame__inner__form__inner__left__inner__box__content__title , .modalGame__inner__form__marketvalue , .modalGame__inner__form__marketvalue__icon__value{
+        font-size: 16px;
+    }
+    .modalGame__inner__form__marketvalue__icon span{
+        height: 20px;
+        width: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .modalGame__inner__form__inner__right__inner__btn{
+        margin-top: 10px;
+    }
+    .modalGame__inner__form__inner__right__inner__btn__green{
+        margin: 5px 0;
+        padding: 7px 0;
+    }
+    .modalGame__inner__form__inner__right__inner__btn__red{
+        margin: 5px 0;
+        padding: 7px 0;
+    }
+    .modalgame__point{
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width:680px){
+    .modalGame__content{
+        width: 500px;
+    }
+    .modalGame__inner__form__inner__left__inner__box{
+        width: 100%;
+    }
+    .modalGame__inner__form__inner__right__inner__box{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:570px){
+    .modalGame__content{
+        width: 400px;
+        padding: 35px 15px;
+    }
+}
+@media screen and (max-width:500px){
+    .modalGame__inner__form__inner__left__inner__box{
+        width: 90%;
+    }
+    .modalGame__inner__form__inner__right__inner__box{
+        width: 90%;
+    }
+    .modalGame__content{
+        width: 350px;
+    }
+    .modalGame__inner__form__inner__left__inner__playerImage img{
+        height: 90px;
+        width: 130px;
+    }
+    .modalGame__content{
+        height: 600px;
+        top: 10%;
+    }
+    .modalGame__inner__form__inner__left__inner__box__flag img{
+        height: 30px;
+        width: 30px;
+    }
+    .modalGame__inner__form__inner__left__inner__box__content__title , .modalGame__inner__form__marketvalue , .modalGame__inner__form__marketvalue__icon__value{
+        font-size: 12px;
+    }
+    .modalGame__inner__form__inner__right__inner__btn__green ,.modalGame__inner__form__inner__right__inner__btn__red{
+        font-size: 12px;
+        width: 200px;
+    }
+    .modalgame__point span{
+        height: 20px;
+        width: 20px;
+        font-size: 12px;
+    }
+    .modalGame__inner__form__inner__left__inner__box__content__text{
+        font-size: 12px;
+    }
+    .text_red{
+        margin-left: 0 !important;
+    }
+    .app__versus__bar::after{
+        font-size: 14px;
+        padding: 6px 30px;
+        top: -14px;
+    }
+}
+@media screen and (max-width:370px){
+    .modalGame__content{
+        width: 300px;
+    }
+    .text_red{
+        margin-left: 5px !important;
+    }
+}
